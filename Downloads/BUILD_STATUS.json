@@ -1,0 +1,42 @@
+{
+  "prepared_date": "2026-10-17",
+  "declared_unreal_version": "5.8",
+  "intended_target": "Win64 Development",
+  "compiled_executable_included": false,
+  "binary_map_included": false,
+  "cooked_content_included": false,
+  "unreal_build_executed": false,
+  "unreal_runtime_tests_executed": false,
+  "manual_three_region_playtest_executed": false,
+  "owner_reported_windows_engine": "UE 5.8 installed; cloud has no access to that PC",
+  "visual_studio_and_sdk_confirmed": false,
+  "cloud_platform": "Linux, without Unreal Engine / MSVC / Windows SDK",
+  "project_snapshot_files": 58,
+  "cpp_source_and_header_files": 32,
+  "original_starter_files_preserved": 44,
+  "original_starter_sha256": "d9fe0f2ae2280adfc1b8c38e8f8bab6719e7bd784bd19dcc080a15d3b59eb385",
+  "previous_builder_zip_sha256": "77b6f5854690c9f6ca497ce451c45f1cbbbd5dd0ba03adc4a1147dff0934e5e9",
+  "previous_github_archive_commit": "8f21f6225193bf73a35fda70083fbd25302a6a2d",
+  "historical_host_checks": {
+    "source_structure": "passed; this is not Unreal compilation",
+    "python_syntax": "passed; Unreal Python APIs unexecuted",
+    "powershell_parsing": "6 scripts passed",
+    "report_validation_helper_checks": "8 passed; not gameplay tests",
+    "process_exit_status": "0 accepted, 7 rejected",
+    "linux_build_guard": "rejection verified"
+  },
+  "handoff_host_checks": {
+    "original_file_preservation": "44 byte-for-byte matches",
+    "copied_source_structure": "passed via existing validator",
+    "copied_python_syntax": "parsed successfully",
+    "archive_integrity": "passed CRC, SHA256 manifest, safe-path and source-preservation checks during packaging; verified again before upload"
+  },
+  "next_required_checks": [
+    "UnrealHeaderTool/UnrealBuildTool on Windows",
+    "Generate L_Greybox map in Unreal",
+    "Package Win64 Development",
+    "Run native smoke and separate-process restart tests",
+    "Manual input/collision/three-region acceptance",
+    "Profile performance against an agreed budget"
+  ]
+}

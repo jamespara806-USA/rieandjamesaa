@@ -1,0 +1,11 @@
+Please continue my Threshold Run Unreal Engine 5.8 C++ greybox project using this handoff.
+
+Read CLAUDE_HANDOFF.md and inspect the ThresholdRun project folder. If only one text file can be attached, CLAUDE_CONTEXT.md contains the handoff and every current project text file.
+
+My immediate goal is a real Windows Win64 Development playtest that I can launch and share. I have a Windows PC with UE 5.8 installed. The cloud session that prepared this handoff could not access that PC, compile Unreal, create a binary map, or produce an EXE. Visual Studio C++ and Windows SDK availability still need checking. Do not treat the supplied structural/script checks as Unreal compilation or gameplay passes.
+
+Preserve the native game architecture, controls and three-region route. Actual switch/gate classes are ASwitchMechanism and AGreyGate. First compile the current project, create/validate L_Greybox, package it, run the existing ThresholdRun.Smoke.GameLoop automation and separate-process persistence check, then manually verify the complete route and collision/input. The existing Build-Playtest.cmd drives the Windows sequence; inspect it before execution and fix concrete errors with minimal patches.
+
+Keep player saves safe. The game hardcodes ThresholdRunMeta_v1, user 0; use the runner's isolated UserDir for automation. Confirm saved disk data, not just cached GameInstance values. Report passed, failed, skipped and unexecuted checks honestly, with the actual compiler/runtime logs and test counts. If you lack access to the Windows machine, give me the exact next command and diagnose logs I supply rather than claiming an EXE was built.
+
+When packaging succeeds, hand over the complete playable archive, including the real ThresholdRun.exe, cooked content, DLLs and prerequisites. The EXE alone is insufficient. Do not add new mechanics or port engines before validating the existing loop. Future milestone notes are context, not a request to implement every proposed feature now.
